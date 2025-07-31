@@ -1,0 +1,205 @@
+ @media (max-width: 768px) {
+
+  
+  html, body {    
+    margin: 0;
+    overflow: hidden;
+    /* font-size: 14px; */
+  }
+
+  .portfolio-container {
+        flex-direction: column;
+    display: flex;
+       width: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    font-size: 15px;   
+    
+  }
+
+  
+  .main-content {
+    margin-left: 0;
+    padding: 0 16px 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    height: 105vh;
+    
+  }
+
+.hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 87%;
+    z-index: 1101;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--text-color);
+    cursor: pointer; 
+     box-sizing: border-box;
+  } 
+
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: -100%;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--dark-bg);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 30px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 15px;
+  }
+
+  .sidebar.active {
+    left: 0;
+    
+  }
+
+  
+.download-cv-btn,
+.download-cv-btn:focus,
+.download-cv-btn:active  {
+  font-weight: bolder;
+   font-size: 1rem;
+  position: fixed;
+  top: 92%;
+  left: 50px; /* ✅ Keeps it near the left edge on all screen sizes */
+  transform: rotate(-90deg);
+  transform-origin: left; 
+  background: linear-gradient(135deg, var(--highlight-color), #FF92D0);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px rgba(0, 174, 239, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  width: fit-content;
+  max-width: 220px; 
+   box-sizing: border-box;    
+  min-height: 42px;  
+   height: 44px;           /* ✅ Consistent button height */
+   line-height: 1.2;      /* ✅ Ensures vertical alignment of text */
+ }   
+
+    .content-section {      
+    padding: 0 12px 12px 12px;
+    width: 100%;
+    margin: 0;
+
+  }  
+
+#hero h1 {
+     font-size: 3.0em;
+    align-items: center;    
+    }
+
+    
+  .skills-grid,
+  .projects-grid,
+  .certificate-grid {
+    grid-template-columns: 1fr;
+    padding-top: 5px;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    flex: 1 1 100%;
+     font-size: 1.0em; 
+ 
+  }
+
+   .certificate-grid {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .certificate-grid h3{
+    font-size: 1.2em;    
+  }
+
+ .section-header {
+  position: sticky;
+  background-color: var(--dark-bg); 
+  z-index: 999;
+  padding: 12px 16px;
+  background-clip: padding-box;
+  backdrop-filter: none; 
+  width: 100%;
+  margin-top: 0;  
+  height: 95px;   
+}
+
+
+#about p{
+  font-size: 1em;  
+}
+
+  .skill-item,
+  .project-card,
+  .certificate-card {
+    max-width: 100%;
+    width: 90%;
+    padding: 12px;     
+    margin: 0 auto;
+  }
+
+  .contact-btn {
+    width: 50%;
+    font-size: 1.0em;
+    padding: 12px;    
+  }
+  
+
+  .about-section {
+    padding: 16px;
+    font-size: 13.5px;    
+  }
+
+
+  .about-toggles{
+    font-size: 13px;
+  }
+
+
+  .social-links{
+    margin-bottom: 10px;    
+    padding-bottom: 30px;
+  }
+
+  .sidebar-open .download-cv-btn {
+    opacity: 0;
+    pointer-events: none;
+    display: none !important;
+  }
+
+  
+  .project-card h3 {
+    font-size: 1.3em;
+    text-align: center;
+  }  
+
+.content-section h2{
+  font-size: 1.8em;   
+  padding: 15px 0 0 3px;
+}
+
+#hero{
+  padding: 30px 45px 100px 50px;
+}
+.para{  
+  margin: 0;
+}
+
+}
+
+
+
